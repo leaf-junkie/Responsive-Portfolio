@@ -281,3 +281,30 @@ button {
     display: table;
     clear: both;
   }
+
+/* --------------------------------------- */
+/*                                         */
+/*             MEDIA QUERIES               */
+/*                                         */
+/* --------------------------------------- */
+
+@media screen (max-width: 640px) {
+    body {
+        
+    }
+    header {
+        position: static;
+    }
+}
+
+@media screen (max-width: 768px) {
+    body {
+
+    }
+}
+
+@media screen (max-width: 980px) {
+    body {
+
+    }
+}
