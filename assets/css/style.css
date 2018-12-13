@@ -1,0 +1,283 @@
+/* ------------------------------------------ */
+/*                                            */
+/*      CSS styling for Basic Portfolio       */
+/*                                            */
+/*  Couldn't quite figure out how to overlay  */
+/*  the text over the images in the Portfolio */
+/* ------------------------------------------ */
+
+/* Provide line-height of 200% and change body color */
+body {
+    color: black;
+    background-image: url(../images/concrete-texture/concrete-texture.png);
+    line-height: 200%;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*        HEADER AND NAVIGATION BAR        */
+/*                                         */
+/* --------------------------------------- */
+
+/* Make a sticky header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 100;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Apply position to name */
+.topbar {
+    position: relative;
+}
+
+/* Remove margins and padding from topnav, and add white background */
+ul.topnav {
+    list-style-type: none;
+    margin: -35px auto 0px auto;
+    padding: 0px;
+    width: 960px;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+    float: right;
+    padding-top: 50px;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #777;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Place my name in a box and give it color */
+div.name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #4aaaa5;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 40px;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*              SUBHEADINGS                */
+/*                                         */
+/* --------------------------------------- */
+
+/* Float the subheadings About, Portfolio, and Contact left, and change the color*/
+div.subheading {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h2.h2-subheading {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;position: relative;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*              ABOUT ME PAGE              */
+/*                                         */
+/* --------------------------------------- */
+
+div.div-about {
+    display: block;
+    position: relative;
+    margin: 75px auto;
+    width: 960px;
+}
+
+section.section-about {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+img {
+    padding-right: 25px;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*             PORTFOLIO PAGE              */
+/*                                         */
+/* --------------------------------------- */
+
+div.div-portfolio {
+    display: block;
+    position: relative;
+    margin: 75px auto;
+    width: 961px;
+}
+
+section.section-portfolio {
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.column img {
+    padding: 13px;
+    background-color: #fff;
+}
+
+.container-1 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-left: 1px solid #ccc;
+}
+
+.container-2 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+.container-3 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-right: 1px solid #ccc;
+}
+
+.container-4 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.container-5 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-6 {
+    position: relative;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.project-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /*
+    border-right: 14px solid #fff;
+    border-left: 14px solid #fff;
+    */
+}
+
+
+/* --------------------------------------- */
+/*                                         */
+/*              CONTACT PAGE               */
+/*                                         */
+/* --------------------------------------- */
+
+div.div-contact {
+    display: block;
+    position: relative;
+    margin: 75px auto;
+    width: 960px;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*                  FORM                   */
+/*                                         */
+/* --------------------------------------- */
+
+.form {
+    display: block;
+    text-align: left;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #ddd;
+}
+
+/* Adjust the width of the form's input */
+.input {
+    width: 99%;
+}
+
+/* Adjust the width of the form's textarea */
+textarea {
+    width: 99%;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*                 FOOTER                  */
+/*                                         */
+/* --------------------------------------- */
+
+/* Make a sticky footer */
+.footer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    border-top: 8px solid #4aaaa5;
+    background-color: #666;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*                CLEARFIX                 */
+/*                                         */
+/* --------------------------------------- */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
