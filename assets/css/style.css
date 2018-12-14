@@ -287,23 +287,117 @@ button {
 /*                                         */
 /* --------------------------------------- */
 
-@media screen and (max-width: 640px) {
-    body {
-
-    }
-    header {
-        position: static;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-
-    }
-}
-
+/* Large devices */
 @media screen and (max-width: 980px) {
-    body {
 
+    /* Apply position to name */
+    .topbar {
+        margin-left: 50px;
     }
+
+    /* Remove margins and padding from topnav, and add white background */
+    ul.topnav {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Style the links inside the list items */
+    ul.topnav li a {
+        padding-right: 25px;
+        font-size: 20px;
+    }
+    
+    div.div-about {
+            margin: 75px 50px;
+            width: 600px;
+            position: absolute;
+            box-align: left;
+    }
+        
+    section.section-about {
+        padding: 35px;
+        text-align: left;
+    }
+
+}
+
+/* Medium devices */
+@media screen and (max-width: 768px) {
+    /* Apply position to name */
+    
+    body {
+        width: auto;
+    }
+
+    .topbar {
+        margin-left: 25px;
+    }
+
+    /* Remove margins and padding from topnav, and add white background */
+    ul.topnav {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        width: auto;
+    }
+
+    /* Style the links inside the list items */
+    ul.topnav li a {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    div.subheading {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    div.div-about {
+            margin: 75px 20px;
+            width: 680px;
+            position: absolute;
+            box-align: left;
+    }
+        
+    section.section-about {
+        padding: 30px;
+        text-align: left;
+    }
+
+}
+
+/* Small devices */
+@media screen and (max-width: 640px) {
+    /* Apply position to name */
+    .topbar {
+        margin-left: 50px;
+    }
+
+    /* Remove margins and padding from topnav, and add white background */
+    ul.topnav {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Style the links inside the list items */
+    ul.topnav li a {
+        padding-right: 25px;
+        font-size: 20px;
+    }
+
+    div.div-about {
+            margin: 75px 50px;
+            width: 600px;
+            position: absolute;
+            box-align: left;
+    }
+        
+    section.section-about {
+        padding: 35px;
+        text-align: left;
+    }
+
 }
