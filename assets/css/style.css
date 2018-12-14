@@ -1,6 +1,6 @@
 /* ------------------------------------------ */
 /*                                            */
-/*      CSS styling for Basic Portfolio       */
+/*    CSS styling for Responsive Portfolio    */
 /*                                            */
 /*  Couldn't quite figure out how to overlay  */
 /*  the text over the images in the Portfolio */
@@ -204,7 +204,6 @@ section.section-portfolio {
     */
 }
 
-
 /* --------------------------------------- */
 /*                                         */
 /*              CONTACT PAGE               */
@@ -288,22 +287,22 @@ button {
 /*                                         */
 /* --------------------------------------- */
 
-@media screen (max-width: 640px) {
+@media screen and (max-width: 640px) {
     body {
-        
+
     }
     header {
         position: static;
     }
 }
 
-@media screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
 
     }
 }
 
-@media screen (max-width: 980px) {
+@media screen and (max-width: 980px) {
     body {
 
     }
