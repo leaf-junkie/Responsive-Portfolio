@@ -1,11 +1,3 @@
-/* ------------------------------------------ */
-/*                                            */
-/*    CSS styling for Responsive Portfolio    */
-/*                                            */
-/*  Couldn't quite figure out how to overlay  */
-/*  the text over the images in the Portfolio */
-/* ------------------------------------------ */
-
 /* Provide line-height of 200% and change body color */
 body {
     color: black;
@@ -13,12 +5,7 @@ body {
     line-height: 200%;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*        HEADER AND NAVIGATION BAR        */
-/*                                         */
-/* --------------------------------------- */
-
+/* HEADER AND NAVIGATION BAR */
 /* Make a sticky header */
 .header {
     position: absolute;
@@ -75,12 +62,7 @@ h2 {
     padding-top: 40px;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*              SUBHEADINGS                */
-/*                                         */
-/* --------------------------------------- */
-
+/* SUBHEADINGS */
 /* Float the subheadings About, Portfolio, and Contact left, and change the color*/
 div.subheading {
     width: 960px;
@@ -92,12 +74,8 @@ h2.h2-subheading {
     font-family: Georgia, 'Times New Roman', Times, serif;position: relative;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*              ABOUT ME PAGE              */
-/*                                         */
-/* --------------------------------------- */
-
+/* ABOUT ME PAGE */
+/* This div holds the About section */
 div.div-about {
     display: block;
     position: relative;
@@ -112,22 +90,20 @@ section.section-about {
     background-color: #fff;
 }
 
+/* This formats the paragraphs in the About section */
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-align: justify;
 }
 
+/* This formats the image used in the About section*/
 img {
     padding-right: 25px;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*             PORTFOLIO PAGE              */
-/*                                         */
-/* --------------------------------------- */
-
+/* PORTFOLIO PAGE */
+/* This div holds the portfolio section */
 div.div-portfolio {
     display: block;
     position: relative;
@@ -204,12 +180,8 @@ section.section-portfolio {
     */
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*              CONTACT PAGE               */
-/*                                         */
-/* --------------------------------------- */
-
+/* CONTACT PAGE */
+/* This div holds the form and makes it easy to adjust */
 div.div-contact {
     display: block;
     position: relative;
@@ -217,12 +189,7 @@ div.div-contact {
     width: 960px;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*                  FORM                   */
-/*                                         */
-/* --------------------------------------- */
-
+/* Make the form */
 .form {
     display: block;
     text-align: left;
@@ -233,12 +200,12 @@ div.div-contact {
     border: 1px solid #ddd;
 }
 
-/* Adjust the width of the form's input */
+/* Adjust the form's input width */
 .input {
     width: 99%;
 }
 
-/* Adjust the width of the form's textarea */
+/* Adjust the form's textarea width */
 textarea {
     width: 99%;
 }
@@ -252,12 +219,6 @@ button {
     font-size: 18px;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*                 FOOTER                  */
-/*                                         */
-/* --------------------------------------- */
-
 /* Make a sticky footer */
 .footer {
     position: absolute;
@@ -269,12 +230,7 @@ button {
     background-color: #666;
 }
 
-/* --------------------------------------- */
-/*                                         */
-/*                CLEARFIX                 */
-/*                                         */
-/* --------------------------------------- */
-
+/* Clearfix */
 .clearfix:after {
     content: "";
     display: table;
@@ -287,10 +243,17 @@ button {
 /*                                         */
 /* --------------------------------------- */
 
+/*---------------*/
 /* Large devices */
+/*---------------*/
+
 @media screen and (max-width: 980px) {
 
     /* Apply position to name */
+    body {
+        width: auto;
+    }
+    
     .topbar {
         margin-left: 50px;
     }
@@ -299,12 +262,22 @@ button {
     ul.topnav {
         background-color: #fff;
         border-bottom: 1px solid #ccc;
+        width: auto;
     }
 
     /* Style the links inside the list items */
     ul.topnav li a {
         padding-right: 25px;
         font-size: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    div.subheading {
+        width: auto;
+        margin: 0 auto;
     }
     
     div.div-about {
@@ -321,7 +294,10 @@ button {
 
 }
 
+/*-------------- -*/
 /* Medium devices */
+/*-------------- -*/
+
 @media screen and (max-width: 768px) {
     /* Apply position to name */
     
@@ -369,11 +345,30 @@ button {
 
 }
 
+/*---------------*/
 /* Small devices */
+/*---------------*/
+
 @media screen and (max-width: 640px) {
     /* Apply position to name */
+    
+    body {
+        width: auto;
+    }
+
+    .header {
+        width: auto;
+        margin-left: -25px;
+    }
+
+    /* Apply position to name */
     .topbar {
-        margin-left: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 100%;
+        width: auto;
     }
 
     /* Remove margins and padding from topnav, and add white background */
@@ -386,13 +381,31 @@ button {
     ul.topnav li a {
         padding-right: 25px;
         font-size: 20px;
+        padding-top: 0px;
+    }
+
+    /* Effectively place my name in its own row and stretch across the top */
+    div.name {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    div.subheading {
+        font-size: 36px;
+        width: auto;
+        margin: 0px;
     }
 
     div.div-about {
-            margin: 75px 50px;
-            width: 600px;
-            position: absolute;
-            box-align: left;
+        margin: 150px 30px;
+        width: 550px;
+        position: absolute;
+        box-align: left;
     }
         
     section.section-about {
