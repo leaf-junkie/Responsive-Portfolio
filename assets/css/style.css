@@ -3,6 +3,9 @@ body {
     color: black;
     background-image: url(../images/concrete-texture/concrete-texture.png);
     line-height: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(39, 39, 39);
 }
 
 /* HEADER AND NAVIGATION BAR */
@@ -12,7 +15,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    margin-bottom: 100;
+    /* margin-bottom: 100; */
     background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
@@ -98,24 +101,20 @@ p {
 }
 
 /* This formats the image used in the About section*/
-img {
+/* img {
     padding-right: 25px;
-}
+} */
 
 /* PORTFOLIO PAGE */
 /* This div holds the portfolio section */
 div.container {
+    position: relative;
     border: 1px solid #ddd;
     width: auto;
-    height: 975px;
+    /* height: 975px; */
     box-align: center;
     background-color: #fff;
     margin: auto;  
-}
-
-section.section-portfolio {
-    text-align: left;
-    background-color: #fff;
 }
 
 .image-grid {
@@ -131,7 +130,7 @@ section.section-portfolio {
     box-align: center;
     width: 100%;
     height: auto;
-    margin: 15px;
+    /* margin: 15px; */
 }
 
 .overlay {
@@ -142,8 +141,6 @@ section.section-portfolio {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 97%;
-    width: 91%;
     opacity: 0;
     transition: .5s ease;
     background-color: #4aaaa5;
@@ -216,11 +213,11 @@ button {
 }
 
 /* Clearfix */
-.clearfix:after {
+/* .clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+} */
 
 /* --------------------------------------- */
 /*                                         */
@@ -279,18 +276,10 @@ button {
 
     /* PORTFOLIO */
     div.div-portfolio {
-        margin: 75px 50px;
+        /* margin: 75px 50px; */
         width: 700px;
         position: absolute;
         box-align: left;
-    }
-
-    section.section-portfolio {
-        padding: 30px;
-        text-align: left;
-        width: auto;
-        height: 1100px;
-        box-align: center;
     }
 
     .image-grid {
@@ -302,23 +291,6 @@ button {
         display: block;
         width: 100%;
         height: auto;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #4aaaa5;
-    }
-
-    .container:hover .overlay {
-        opacity: 1;
     }
 
     .text {
@@ -337,6 +309,7 @@ button {
     div.div-contact {
         margin: 100px 43px;
         width: 65%;
+    }
 }
 
 
@@ -391,18 +364,10 @@ button {
 
     /* PORTFOLIO */
     div.div-portfolio {
-        margin: 75px 50px;
+        /* margin: 75px 50px; */
         width: 700px;
         position: absolute;
         box-align: left;
-    }
-
-    section.section-portfolio {
-        padding: 30px;
-        text-align: left;
-        width: auto;
-        height: 1100px;
-        box-align: center;
     }
 
     .image-grid {
@@ -415,23 +380,6 @@ button {
         width: 100%;
         height: auto;
         box-align: center;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 97%;
-        width: 91%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #4aaaa5;
-    }
-
-    .container:hover .overlay {
-        opacity: 1;
     }
 
     .text {
@@ -450,7 +398,7 @@ button {
     div.div-contact {
         margin: 100px 20px;
         width: 95%;
-    
+    }
 }
 
 /*---------------*/
@@ -529,18 +477,10 @@ button {
 
     /* PORTFOLIO */
     div.div-portfolio {
-        margin: 75px 50px;
+        /* margin: 75px 50px; */
         width: 700px;
         position: absolute;
         box-align: left;
-    }
-
-    section.section-portfolio {
-        padding: 30px;
-        text-align: left;
-        width: auto;
-        height: 1100px;
-        box-align: center;
     }
 
     .image-grid {
@@ -553,23 +493,6 @@ button {
         width: 100%;
         height: auto;
         box-align: center;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 97%;
-        width: 91%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #4aaaa5;
-    }
-
-    .container:hover .overlay {
-        opacity: 1;
     }
 
     .text {
@@ -596,3 +519,4 @@ button {
         font-size: 20px;
     }
 }
+
