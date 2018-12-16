@@ -104,80 +104,74 @@ img {
 
 /* PORTFOLIO PAGE */
 /* This div holds the portfolio section */
-div.div-portfolio {
-    display: block;
-    position: relative;
-    margin: 75px auto;
-    width: 961px;
+div.container {
+    border: 1px solid #ddd;
+    width: auto;
+    height: 950px;
+    box-align: center;
+    background-color: #fff;
 }
 
 section.section-portfolio {
     text-align: left;
-    border: 1px solid #ddd;
     background-color: #fff;
 }
 
-.column img {
-    padding: 13px;
-    background-color: #fff;
-}
-
-.container-1 {
+.image-grid {
+    display: block;
     position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
-    border-left: 1px solid #ccc;
+    margin: 75px auto;  
+    width: 50%;
 }
 
-.container-2 {
+.image {
     position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
+    display: block;
+    box-align: center;
+    width: 100%;
+    height: auto;
 }
 
-.container-3 {
-    position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
-    border-right: 1px solid #ccc;
-}
-
-.container-4 {
-    position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-}
-
-.container-5 {
-    position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-.container-6 {
-    position: relative;
-    text-align: center;
-    background-color: #4aaaa5;
-    color: #fff;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-.project-name {
+.overlay {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    /*
-    border-right: 14px solid #fff;
-    border-left: 14px solid #fff;
-    */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 97%;
+    width: 91%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #4aaaa5;
+}
+
+section.section-portfolio {
+    padding: 30px;
+    text-align: left;
+    width: auto;
+    height: 1100px;
+    box-align: center;
+}
+
+
+
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* CONTACT PAGE */
@@ -281,10 +275,10 @@ button {
     }
     
     div.div-about {
-            margin: 75px 50px;
-            width: 600px;
-            position: absolute;
-            box-align: left;
+        margin: 75px 50px;
+        width: 600px;
+        position: absolute;
+        box-align: left;
     }
         
     section.section-about {
@@ -292,7 +286,64 @@ button {
         text-align: left;
     }
 
+    /* PORTFOLIO */
+    div.div-portfolio {
+        margin: 75px 50px;
+        width: 700px;
+        position: absolute;
+        box-align: left;
+    }
+
+    section.section-portfolio {
+        padding: 30px;
+        text-align: left;
+        width: auto;
+        height: 1100px;
+        box-align: center;
+    }
+
+    .image-grid {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #4aaaa5;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
 }
+
 
 /*-------------- -*/
 /* Medium devices */
@@ -343,6 +394,63 @@ button {
         text-align: left;
     }
 
+    /* PORTFOLIO */
+    div.div-portfolio {
+        margin: 75px 50px;
+        width: 700px;
+        position: absolute;
+        box-align: left;
+    }
+
+    section.section-portfolio {
+        padding: 30px;
+        text-align: left;
+        width: auto;
+        height: 1100px;
+        box-align: center;
+    }
+
+    .image-grid {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 97%;
+        width: 91%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #4aaaa5;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
 }
 
 /*---------------*/
@@ -382,6 +490,7 @@ button {
         padding-right: 25px;
         font-size: 20px;
         padding-top: 0px;
+        box-align: center;
     }
 
     /* Effectively place my name in its own row and stretch across the top */
@@ -399,6 +508,7 @@ button {
         font-size: 36px;
         width: auto;
         margin: 0px;
+        margin-top: 50px;
     }
 
     div.div-about {
@@ -413,4 +523,64 @@ button {
         text-align: left;
     }
 
+    img {
+        width: auto;
+    }
+
+    /* PORTFOLIO */
+    div.div-portfolio {
+        margin: 75px 50px;
+        width: 700px;
+        position: absolute;
+        box-align: left;
+    }
+
+    section.section-portfolio {
+        padding: 30px;
+        text-align: left;
+        width: auto;
+        height: 1100px;
+        box-align: center;
+    }
+
+    .image-grid {
+        position: relative;
+        width: 50%;
+    }
+
+    .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 97%;
+        width: 91%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #4aaaa5;
+    }
+
+    .container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 }
