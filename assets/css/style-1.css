@@ -201,10 +201,30 @@ button {
         max-width: 980px;
     }
 
-    .about,
-    .portfolio,
+    .navlinks {
+        margin-right: 25px;
+    }
+
+    .name, 
+    .about, 
+    .portfolio, 
     .contact {
-        /* width: 50%; */
+        margin-left: 25px;
+    }
+
+    .about, 
+    .portfolio, 
+    .contact {
+        width: 60%;
+    }
+
+    .container {
+        width: 49%;
+    }
+
+    .input,
+    textarea {
+        width: 100%;
     }
 
 }
@@ -218,17 +238,19 @@ button {
     }
 
     .about,
-    .portfolio, {
-        width: 80%;
-        margin-left: 10px;
-        margin-right: 10px;
+    .portfolio {
+        width: 85%;
     }
+
+    .contact {
+        width: 93%;
+    } 
 
     .container {
         width: 49%;
     }
 
-    .contact,
+
     .input,
     textarea {
         width: 100%;
@@ -256,9 +278,18 @@ button {
     }
 
     .about,
-    .portfolio,
+    .portfolio {
+        margin-left: 12px;
+    }
+
+    .about,
+    .portfolio {
+        width: 85%;
+    }
+
     .contact {
-        width: 90%;
+        width: 93%;
+        margin-left: 20px;
     }
 
     .name,
