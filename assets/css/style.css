@@ -4,6 +4,8 @@ body {
     line-height: 200%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: #333;
+    text-align: justify;
     margin-top: 200px;
 }
 
@@ -46,7 +48,7 @@ body {
 }
 
 .name {
-    background-color: #4aaaa5;
+    background-color: #317256;
     color: #fff;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -63,8 +65,8 @@ body {
 }
 
 .subheading {
-    color: #4aaaa5;
-    border-bottom: 1px solid #ccc;
+    color: #317256;
+    border-bottom: 2px solid #999;
 }
 
 /* About */
@@ -124,7 +126,7 @@ body {
     right: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color: #4aaaa5;
+    background-color: #317256;
     color: #fff;
 }
 
@@ -172,7 +174,7 @@ textarea {
 }
 
 button {
-    background-color: #4aaaa5;
+    background-color: #317256;
     color: #fff;
     border: none;
     padding: 15px;
@@ -188,10 +190,11 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #666;
+    background-color: #333;
     color: #fff;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #317256;
     text-align: center;
+    font-size: 14px;
 }
 
 /* Media Query: 980px */
