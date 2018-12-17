@@ -1,2 +1,1 @@
-# basic-portfolio
-Homework 1: The recommended and more challenging assignment
+https://leaf-junkie.github.io/Responsive-Portfolio/
