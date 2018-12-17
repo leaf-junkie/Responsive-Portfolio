@@ -15,6 +15,7 @@ body {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     position: fixed;
+    z-index: 100;
 }
 
 .navbar a {
@@ -40,7 +41,7 @@ body {
     margin-right: 10px;
 }
 
-li {
+.navlinks li {
     display: inline;
 }
 
@@ -68,24 +69,27 @@ li {
 
 /* About */
 .about {
-    float: left;
     display: block;
     width: 100%;
     max-width: 960px;
     padding: 30px;
-    margin: 0 0 40px;
+    margin: 0 auto;
     background-color: #fff;
     border: 1px solid #ddd;
 }
 
+.picture {
+    margin-right: 25px;
+    width: 50%;
+}
+
 /* Portfolio */
 .portfolio {
-    float: left;
     display: block;
     width: 100%;
     max-width: 960px;
     padding: 30px;
-    margin: 0 0 40px;
+    margin: 0 auto;
     background-color: #fff;
     border: 1px solid #ddd;
 }
@@ -93,16 +97,13 @@ li {
 .container {
     position: relative;
     border: 1px solid #ddd;
-    box-align: center;
     background-color: #fff;
-    margin: auto;  
+    width: 30%;
+    display: inline-block;
 }
 
 .image-grid {
     display: block;
-    position: relative;
-    width: 50%;
-    height: 950px;
 }
 
 .image {
@@ -124,7 +125,6 @@ li {
     opacity: 0;
     transition: .5s ease;
     background-color: #4aaaa5;
-    border: 1px solid #ddd;
     color: #fff;
 }
 
@@ -148,6 +148,9 @@ li {
 .contact {
     display: block;
     border: 1px solid #ddd;
+    width: 100%;
+    max-width: 960px;    
+    margin: 0 auto;
 }
 
 .form {
@@ -161,11 +164,11 @@ li {
 
 /* Adjust the form's input width */
 .input {
-    width: 100%;
+    width: 50%;
 }
 
 textarea {
-    width: 100%;
+    width: 50%;
 }
 
 button {
@@ -194,14 +197,75 @@ button {
 /* Media Query: 980px */
 @media screen and (max-width: 980px) {
 
+    body {
+        max-width: 980px;
+    }
+
+    .about,
+    .portfolio,
+    .contact {
+        /* width: 50%; */
+    }
+
 }
 
 /* Media Query: 768px */
 @media screen and (max-width: 768px) {
+    
+    body {
+        max-width: 768px;
+        margin-top: 180px;
+    }
+
+    .about,
+    .portfolio, {
+        width: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container {
+        width: 49%;
+    }
+
+    .contact,
+    .input,
+    textarea {
+        width: 100%;
+    }
 
 }
 
 /* Media Query: 640px */
 @media screen and (max-width: 640px) {
+
+    body {
+        max-width: 640px;
+        margin-top: 225px;
+    }
+    
+    .name {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .navlinks {
+        float: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about,
+    .portfolio,
+    .contact {
+        width: 90%;
+    }
+
+    .name,
+    .container,
+    .input,
+    textarea {
+        width: 100%;
+    }
 
 }
