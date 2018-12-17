@@ -1,126 +1,109 @@
-/* Provide line-height of 200% and change body color */
+/* General */
 body {
-    color: black;
     background-image: url(../images/concrete-texture/concrete-texture.png);
     line-height: 200%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-top: 200px;
 }
 
-/* HEADER AND NAVIGATION BAR */
-/* Make a sticky header */
-.header {
-    position: absolute;
+/* Fix header to top of page and extend across width of browser */
+.nav {
     top: 0;
     left: 0;
     right: 0;
-    /* margin-bottom: 100; */
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar a {
+    display: inline-block;
+    margin-top: 35px;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+
+.navbar a:first-child {
+    border-left: 0 none;
+
+}
+
+.navlinks {
+    list-style-type: none;
+    float: right;
+    margin-right: 10px;
+}
+
+.navlinks li {
+    display: inline;
+}
+
+.name {
+    background-color: #4aaaa5;
+    color: #fff;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+/* Clearfix */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subheading {
+    color: #4aaaa5;
     border-bottom: 1px solid #ccc;
 }
 
-/* Apply position to name */
-.topbar {
-    position: relative;
-}
-
-/* Remove margins and padding from topnav, and add white background */
-ul.topnav {
-    list-style-type: none;
-    margin: -35px auto 0px auto;
-    padding: 0px;
-    width: 960px;
-    overflow: hidden;
-}
-
-/* Float the list items side by side */
-ul.topnav li {
-    float: right;
-    padding-top: 50px;
-}
-
-/* Style the links inside the list items */
-ul.topnav li a {
-    display: inline-block;
-    color: #777;
-    text-align: center;
-    padding: 14px 10px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Place my name in a box and give it color */
-div.name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-    background-color: #4aaaa5;
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-}
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 40px;
-}
-
-/* SUBHEADINGS */
-/* Float the subheadings About, Portfolio, and Contact left, and change the color*/
-div.subheading {
-    width: 960px;
-    margin: 0 auto;
-}
-
-h2.h2-subheading {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;position: relative;
-}
-
-/* ABOUT ME PAGE */
-/* This div holds the About section */
-div.div-about {
+/* About */
+.about {
     display: block;
-    position: relative;
-    margin: 75px auto;
-    width: 960px;
-}
-
-section.section-about {
-    padding: 20px;
-    text-align: left;
-    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 auto;
     background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-/* This formats the paragraphs in the About section */
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: justify;
+.picture {
+    margin-right: 25px;
+    width: 50%;
 }
 
-/* This formats the image used in the About section*/
-/* img {
-    padding-right: 25px;
-} */
+/* Portfolio */
+.portfolio {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
 
-/* PORTFOLIO PAGE */
-/* This div holds the portfolio section */
-div.container {
+.container {
     position: relative;
     border: 1px solid #ddd;
-    width: auto;
-    /* height: 975px; */
-    box-align: center;
     background-color: #fff;
-    margin: auto;  
+    width: 30%;
+    display: inline-block;
 }
 
 .image-grid {
     display: block;
-    position: relative;
-    width: 50%;
-    height: 950px;
 }
 
 .image {
@@ -129,7 +112,6 @@ div.container {
     box-align: center;
     width: 100%;
     height: auto;
-    /* margin: 15px; */
 }
 
 .overlay {
@@ -143,6 +125,7 @@ div.container {
     opacity: 0;
     transition: .5s ease;
     background-color: #4aaaa5;
+    color: #fff;
 }
 
 .container:hover .overlay {
@@ -161,16 +144,15 @@ div.container {
     text-align: center;
 }
 
-/* CONTACT PAGE */
-/* This div holds the form and makes it easy to adjust */
-div.div-contact {
+/* Contact */
+.contact {
     display: block;
-    position: relative;
-    margin: 75px auto;
-    width: 960px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 960px;    
+    margin: 0 auto;
 }
 
-/* Make the form */
 .form {
     display: block;
     text-align: left;
@@ -178,17 +160,15 @@ div.div-contact {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     color: #777;
-    border: 1px solid #ddd;
 }
 
 /* Adjust the form's input width */
 .input {
-    width: 99%;
+    width: 50%;
 }
 
-/* Adjust the form's textarea width */
 textarea {
-    width: 99%;
+    width: 50%;
 }
 
 button {
@@ -200,322 +180,123 @@ button {
     font-size: 18px;
 }
 
-/* Make a sticky footer */
+
+/* Fix footer to bottom of page and extend across width of browser */
 .footer {
-    position: absolute;
-    bottom: 0px;
-    text-align: center;
-    left: 0px;
-    right: 0px;
-    border-top: 8px solid #4aaaa5;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #666;
+    color: #fff;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
 }
 
-/* Clearfix */
-/* .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-/* --------------------------------------- */
-/*                                         */
-/*             MEDIA QUERIES               */
-/*                                         */
-/* --------------------------------------- */
-
-/*---------------*/
-/* Large devices */
-/*---------------*/
-
+/* Media Query: 980px */
 @media screen and (max-width: 980px) {
 
-    /* Apply position to name */
     body {
-        width: auto;
-    }
-    
-    .topbar {
-        margin-left: 50px;
+        max-width: 980px;
     }
 
-    /* Remove margins and padding from topnav, and add white background */
-    ul.topnav {
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
-        width: auto;
+    .navlinks {
+        margin-right: 25px;
     }
 
-    /* Style the links inside the list items */
-    ul.topnav li a {
-        padding-right: 25px;
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    div.subheading {
-        width: auto;
-        margin: 0 auto;
-    }
-    
-    div.div-about {
-        margin: 75px 50px;
-        width: 600px;
-        position: absolute;
-        box-align: left;
-    }
-        
-    section.section-about {
-        padding: 35px;
-        text-align: left;
-    }
-
-    /* PORTFOLIO */
-    div.div-portfolio {
-        /* margin: 75px 50px; */
-        width: 700px;
-        position: absolute;
-        box-align: left;
-    }
-
-    .image-grid {
-        position: relative;
-        width: 50%;
-    }
-
-    .image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    .text {
-        color: #fff;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    /* CONTACT PAGE */
-    div.div-contact {
-        margin: 100px 43px;
-        width: 65%;
-    }
-}
-
-
-/*-------------- -*/
-/* Medium devices */
-/*-------------- -*/
-
-@media screen and (max-width: 768px) {
-    /* Apply position to name */
-    
-    body {
-        width: auto;
-    }
-
-    .topbar {
+    .name, 
+    .about, 
+    .portfolio, 
+    .contact {
         margin-left: 25px;
     }
 
-    /* Remove margins and padding from topnav, and add white background */
-    ul.topnav {
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
-        width: auto;
+    .about, 
+    .portfolio, 
+    .contact {
+        width: 60%;
     }
 
-    /* Style the links inside the list items */
-    ul.topnav li a {
-        padding-right: 20px;
-        font-size: 20px;
+    .container {
+        width: 49%;
     }
 
-    h2 {
-        font-size: 30px;
-    }
-
-    div.subheading {
-        width: auto;
-        margin: 0 auto;
-    }
-
-    div.div-about {
-            margin: 75px 20px;
-            width: 680px;
-            position: absolute;
-            box-align: left;
-    }
-        
-    section.section-about {
-        padding: 30px;
-        text-align: left;
-    }
-
-    /* PORTFOLIO */
-    div.div-portfolio {
-        /* margin: 75px 50px; */
-        width: 700px;
-        position: absolute;
-        box-align: left;
-    }
-
-    .image-grid {
-        position: relative;
-        width: 50%;
-    }
-
-    .image {
-        display: block;
+    .input,
+    textarea {
         width: 100%;
-        height: auto;
-        box-align: center;
     }
 
-    .text {
-        color: #fff;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    /* CONTACT PAGE */
-    div.div-contact {
-        margin: 100px 20px;
-        width: 95%;
-    }
 }
 
-/*---------------*/
-/* Small devices */
-/*---------------*/
-
-@media screen and (max-width: 640px) {
-    /* Apply position to name */
+/* Media Query: 768px */
+@media screen and (max-width: 768px) {
     
     body {
-        width: auto;
+        max-width: 768px;
+        margin-top: 180px;
     }
 
-    .header {
-        width: auto;
-        margin-left: -25px;
+    .about,
+    .portfolio {
+        width: 85%;
     }
 
-    /* Apply position to name */
-    .topbar {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 100%;
-        width: auto;
+    .contact {
+        width: 93%;
+    } 
+
+    .container {
+        width: 49%;
     }
 
-    /* Remove margins and padding from topnav, and add white background */
-    ul.topnav {
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
-    }
 
-    /* Style the links inside the list items */
-    ul.topnav li a {
-        padding-right: 25px;
-        font-size: 20px;
-        padding-top: 0px;
-        box-align: center;
-    }
-
-    /* Effectively place my name in its own row and stretch across the top */
-    div.name {
-        width: 100%;
-        text-align: center;
-        margin-left: 0px;
-    }
-
-    h2 {
-        font-size: 36px;
-    }
-
-    div.subheading {
-        font-size: 36px;
-        width: auto;
-        margin: 0px;
-        margin-top: 50px;
-    }
-
-    div.div-about {
-        margin: 150px 15px;
-        width: 420px;
-        position: absolute;
-        box-align: left;
-    }
-        
-    section.section-about {
-        padding: 35px;
-        text-align: left;
-    }
-
-    img {
+    .input,
+    textarea {
         width: 100%;
     }
 
-    /* PORTFOLIO */
-    div.div-portfolio {
-        /* margin: 75px 50px; */
-        width: 700px;
-        position: absolute;
-        box-align: left;
-    }
-
-    .image-grid {
-        position: relative;
-        width: 50%;
-    }
-
-    .image {
-        display: block;
-        width: 100%;
-        height: auto;
-        box-align: center;
-    }
-
-    .text {
-        color: #fff;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
-    /* CONTACT PAGE */
-    div.div-contact {
-        margin: 200px 15px;
-        width: 95%;
-    }
-
-    /* FOOTER */
-    .footer {
-        height: 5%;
-        font-size: 20px;
-    }
 }
 
+/* Media Query: 640px */
+@media screen and (max-width: 640px) {
+
+    body {
+        max-width: 640px;
+        margin-top: 225px;
+    }
+    
+    .name {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .navlinks {
+        float: both;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about,
+    .portfolio {
+        margin-left: 12px;
+    }
+
+    .about,
+    .portfolio {
+        width: 85%;
+    }
+
+    .contact {
+        width: 93%;
+        margin-left: 20px;
+    }
+
+    .name,
+    .container,
+    .input,
+    textarea {
+        width: 100%;
+    }
+
+}
